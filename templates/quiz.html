@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Clean Blog - Start Bootstrap Theme</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/quiz2.css" rel="stylesheet">
+
+</head>
+
+<body bgcolor="#D0ECE7">
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">  <img class="logo"  id="earth" src="img/earth.jpg">
+        <span id="covid">
+           <b> COVID_19</b>
+        </span></a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto nav-pills nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="stat.html">Statistics</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="quiz2.html">Self-Assessment</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog.html">Blogs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ref.html">References</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('img/quiz.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>COVID-19: <br> E-Assessment</h1><hr color="white" width="100%">
+            <span class="subheading">Ready for a Self-Assessment quiz? <br>Here you go! </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+<div class="container" id="quiz-div">
+    <form  method="post" id="quiz"  onSubmit="return Submit();">
+        <!-- action="grade.php" -->
+       <div id="q1" >
+            <h3>Q1. Are you experiencing any of the following symptoms?</h3> <br>
+
+            <div class="form-check">
+                <input type="radio" name="question-1-answers" id="question-1-answers-A" value="A" />
+                <label for="question-1-answers-A">A) Cough </label>
+            </div>
+
+            <div class="form-check">
+                <input type="radio" name="question-1-answers" id="question-1-answers-B" value="B" />
+                <label for="question-1-answers-B">B) Fever</label>
+            </div>
+
+            <div class="form-check">
+                <input type="radio" name="question-1-answers" id="question-1-answers-C" value="C" />
+                <label for="question-1-answers-C">C) Difficulty in Breathing</label>
+            </div>
+
+            <div class="form-check">
+                <input type="radio" name="question-1-answers" id="question-1-answers-D" value="D"  onclick="checkAnswer()"/>
+                <label for="question-1-answers-D" >D) None of the Above</label>
+            </div>
+
+        </div>
+        <hr>
+       <div id="q2">
+
+            <h3>Q2. Have you ever had any one of the following:</h3> <br>
+
+            <div class="form-check">
+                <input type="radio" name="question-1-answers" id="question-2-answers-A" value="A" />
+                <label for="question-1-answers-A">A) Diabetes </label>
+            </div>
+
+            <div class="form-check">
+                <input type="radio" name="question-1-answers" id="question-2-answers-B" value="B" />
+                <label for="question-1-answers-B">B) Hypertension</label>
+            </div>
+
+            <div class="form-check">
+                <input type="radio" name="question-1-answers" id="question-2-answers-C" value="C" />
+                <label for="question-1-answers-C">C) Lung disease</label>
+            </div>
+
+            <div class="form-check">
+                <input type="radio" name="question-1-answers" id="question-2-answers-D" value="D" />
+                <label for="question-1-answers-D">D) Heart disease</label>
+            </div>
+
+            <div class="form-check">
+                <input type="radio" name="question-1-answers" id="question-2-answers-D" value="D" onclick="checkAnswer()" />
+                <label for="question-1-answers-D">E) None of the above</label>
+            </div>
+
+        </div>
+        <hr>
+       <div id="q3">
+
+            <h3>Q3. Have you travelled anywhere internationally in the last 14 days?</h3> <br>
+
+            <div class="form-check">
+                <input type="radio" name="question-1-answers" id="question-3-answers-A" value="A" />
+                <label for="question-1-answers-A">A) Yes </label>
+            </div>
+
+            <div class="form-check">
+                <input type="radio" name="question-1-answers" id="question-3-answers-B" value="B"  onclick="checkAnswer()"/>
+                <label for="question-1-answers-B">B) No</label>
+            </div>
+
+        </div>
+        <hr>
+       <div id="q4">
+
+            <h3>Q4. Which of the following applies to you?</h3> <br>
+
+            <div class="form-check">
+                <input type="radio" name="question-1-answers" id="question-4-answers-A" value="A" />
+                <label for="question-1-answers-A">A) I have recently interacted or lived with someone who has tested positive for COVID-19 </label>
+            </div>
+
+            <div class="form-check">
+                <input type="radio" name="question-1-answers" id="question-4-answers-B" value="B" />
+                <label for="question-1-answers-B">B) I am a healthcare worker and I examined a COVID-19 confirmed case without protective gear.</label>
+            </div>
+
+            <div class="form-check">
+                <input type="radio" name="question-1-answers" id="question-4-answers-C" value="C" onclick="checkAnswer()" />
+                <label for="question-1-answers-C">C)  None of above.</label>
+            </div>
+
+        </div>
+     </form>
+     <br>
+     <br>
+     <center>
+     <button  type="submit" id="submit" class="btn btn-success btn-lg ">Submit</button>
+     <button  type="reset" id="reset" class="btn btn-danger btn-lg ">Reset</button>
+    </center>
+    <br>
+    <br>
+    <hr>
+</div>
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy; Your Website 2020</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+
+ <script src="js/quiz.js"></script>
+
+
+</body>
+
+</html>

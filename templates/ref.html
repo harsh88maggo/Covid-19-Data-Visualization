@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>COVID-19</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{{url_for('static',filename='vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="{{url_for('static',filename='vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="{{url_for('static',filename='css/clean-blog.min.css')}}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">  <img class="logo"  id="earth" src="static/img/earth.jpg">
+        <span id="covid">
+           <b> COVID_19</b>
+        </span></a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto nav-pills nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="stat.html">Statistics</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="quiz2.html">Self-Assessment</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="ref.html">About Covid</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+         
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('static/img/ref.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>ALL ABOUT COVID</h1><hr color="white" width="100%">
+                        <span class="subheading">All you need to know about Covid-19!</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+ <div class="jumbotron" id="main-ref">
+     <div class="row align-items-start">
+            
+                <div class="col">
+             <button type="button" class="btn  " data-target="#demo1" id="b1">  About Covid-19  </button>
+             <div id="demo1" > 
+              After spending so much of time in the lockdown due to the pandemic, people must have been aware of about what COVID is all about, but still for the convinience of our users we attached a PDF which tells all about COVID-19! <br> <a href="static/pdf/About Covid.pdf" id="link" >Click here to know more! </a>
+                </div>
+            </div>
+            <div class="col">
+                <button type="button" class="btn " data-target="#demo2" id="b2" >  Precautions  </button>
+                <div id="demo2"  >
+                  Since vaccine against COVID-19 is still not out there hence we are only left with one weapon to fight against COVID-19 , i.e. PRECAUTIONS. We must be aware of what all precautionswe can follow in order to stay safe in this pandemic from this virus. So here is the attached PDF to tell you all about the precautions for COVID-19. <br> <a href="static/pdf/covid_precautions.pdf" id="link">Click here to know more! </a>
+                    </div>
+               </div>
+               <div class="col">
+                <button type="button" class="btn  "  data-target="#demo3" id="b3">  Symptoms  </button>
+                <div id="demo3" >
+                  We must be prepared for the worst too! What if we have been infected by COVID-19? How will we know it? Well for that we need to know the Symptoms of this virus so that as soon as we find about them we can start the treatment as well. Have a look at the symptoms. <br> <a href="static/pdf/Symptoms of COVID 19-converted.pdf" id="link">Click here to know more! </a>
+                     </div>
+               </div>
+   
+ 
+    
+     </div>
+ </div>
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy; Your Website 2020</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>

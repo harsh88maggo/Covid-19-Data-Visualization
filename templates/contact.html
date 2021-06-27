@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>COVID-19</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{{url_for( 'static' ,  filename='vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="{{ url_for('static', filename ='vendor/fontawesome-free/css/all.min.css')}}" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="{{url_for('static' , filename='css/clean-blog.min.css') }}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">  <img class="logo"  id="earth" src="static/img/earth.jpg">
+        <span id="covid">
+           <b> COVID_19</b>
+        </span></a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        Menu
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto nav-pills nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link"  href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  href="stat.html">Statistics</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  href="quiz2.html">Self-Assessment</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link"  href="ref.html">About Covid</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link "  href="contact.html">Contact Us</a>
+          </li>
+         
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('static/img/contact-bg.jpeg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1 id="contact">CONTACT US</h1><hr color="white" width="100%">
+            <span class="subheading">Have questions? We have answers.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <section class="contact-section my-5" id="main-conact"  >
+    <div class="jumbotron container-fluid" >
+            <!-- Form with header -->
+            <div class="card">
+          
+              <!-- Grid row -->
+              <div class="row">
+          
+                <!-- Grid column -->
+                <div class="col-lg-8">
+          
+                  <div class="card-body form">
+          
+                    <!-- Header -->
+                    <h3 class="mt-4"><i class="fas fa-envelope pr-2"></i>Write to us:</h3>
+          
+                    <!-- Grid row -->
+                    <div class="row">
+          
+                      <!-- Grid column -->
+                      <div class="col-md-6">
+                        <div class="md-form mb-0">
+                          <input type="text" id="form-contact-name" class="form-control">
+                          <label for="form-contact-name" class="">Your name</label>
+                        </div>
+                      </div>
+                      <!-- Grid column -->
+          
+                      <!-- Grid column -->
+                      <div class="col-md-6">
+                        <div class="md-form mb-0">
+                          <input type="text" id="form-contact-email" class="form-control">
+                          <label for="form-contact-email" class="">Your email</label>
+                        </div>
+                      </div>
+                      <!-- Grid column -->
+          
+                    </div>
+                    <!-- Grid row -->
+          
+                    <!-- Grid row -->
+                    <div class="row">
+          
+                      <!-- Grid column -->
+                      <div class="col-md-6">
+                        <div class="md-form mb-0">
+                          <input type="text" id="form-contact-phone" class="form-control">
+                          <label for="form-contact-phone" class="">Your phone</label>
+                        </div>
+                      </div>
+                      <!-- Grid column -->
+          
+                      <!-- Grid column -->
+                      <div class="col-md-6">
+                        <div class="md-form mb-0">
+                          <input type="text" id="form-contact-company" class="form-control">
+                          <label for="form-contact-subject" class="">Your Subject</label>
+                        </div>
+                      </div>
+                      <!-- Grid column -->
+          
+                    </div>
+                    <!-- Grid row -->
+          
+                    <!-- Grid row -->
+                    <div class="row">
+          
+                      <!-- Grid column -->
+                      <div class="col-md-12">
+                        <div class="md-form mb-0">
+                          <textarea id="form-contact-message" class="form-control md-textarea" rows="3"></textarea>
+                          <label for="form-contact-message">Your message</label>
+                          <a class="btn-floating btn-lg blue" href="#" target="_self">
+                            <i class="far fa-paper-plane"></i>
+                          </a>
+                        </div>
+                      </div>
+                      <!-- Grid column -->
+          
+                    </div>
+                    <!-- Grid row -->
+          
+                  </div>
+          
+                </div>
+                <!-- Grid column -->
+          
+                <!-- Grid column -->
+                <div class="col-lg-4" style=" background-color: #34495E;">
+          
+                  <div class="card-body contact text-center h-100 white-text">
+          
+                    
+                    <ul class="text-lg list-unstyled ml-4" style="color: white;">
+                      <li><i class="fas fa-map-marker-alt fa-2x"></i>
+                        <p>Classy</p>
+                      </li>
+                      <li><i class="fas fa-phone mt-4 fa-2x"></i>
+                        <p>+91-9876543210</p>
+                      </li>
+                      <li><i class="fas fa-envelope mt-4 fa-2x"></i>
+                        <p>contact@example.com</p>
+                      </li>
+                    </ul>
+               
+                  
+          
+                  </div>
+          
+                </div>
+                <!-- Grid column -->
+          
+              </div>
+              <!-- Grid row -->
+          
+            </div>
+            <!-- Form with header -->
+          
+          </section>
+        </div> 
+
+  <hr>
+  <div class="container-fluid" id="main-abt">
+    <div class="jumbotron" id="desc-div">
+      <p id="about-desc">
+        <hr color="white">
+        <br>
+        Welcome to COVID.ORG! Here we provide you all the essential information about the ongoing pandemic due to COVID-19 Virus.This portal tells you about the statistics regarding various aspects such as age, area and recovery rate. Further, it provides very important PDFs which explains about the COVID-19, its symptoms and its precautions as well. <br> <br>In Seperate section there is a Self-Assessment quiz provided for the convinience of our users to check for the symptoms of COVID-19 and get an estimated result so that they further can consult the doctors as well, if found with any of the Symptoms. <br> <br>In case, our users have any queries they can contact us by sending their message through the CONTACT US page with the respective details. <br> <br>
+
+        Enjoy the portal!
+         <br><br><hr color="white">
+           </p>
+    </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy; Your Website 2020</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Contact Form JavaScript -->
+  <script src="js/jqBootstrapValidation.js"></script>
+  <script src="js/contact_me.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
